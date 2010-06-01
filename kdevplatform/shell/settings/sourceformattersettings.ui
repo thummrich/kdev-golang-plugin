@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SourceFormatterSettingsUI</class>
+ <widget class="QWidget" name="SourceFormatterSettingsUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>General</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="chkKateModelines">
+        <property name="toolTip">
+         <string>Add kate modeline to formatted documents.</string>
+        </property>
+        <property name="text">
+         <string>Add Kate modeline</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>200</horstretch>
+       <verstretch>129</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>66</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Formatting Styles</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Mimetype:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="margin">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="KComboBox" name="cbLanguages"/>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2" rowspan="3">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Preview:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="textEditor" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Formatter:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="margin">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="KComboBox" name="cbFormatters"/>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Style:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="margin">
+         <number>4</number>
+        </property>
+        <property name="indent">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="KPushButton" name="btnNewStyle">
+          <property name="text">
+           <string>New</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="KPushButton" name="btnEditStyle">
+          <property name="text">
+           <string>Edit...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="KPushButton" name="btnDelStyle">
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="KListWidget" name="styleList">
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KListWidget</class>
+   <extends>QListWidget</extends>
+   <header>klistwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KPushButton</class>
+   <extends>QPushButton</extends>
+   <header>kpushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KComboBox</class>
+   <extends>QComboBox</extends>
+   <header>kcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

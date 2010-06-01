@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditSnippetBase</class>
+ <widget class="QWidget" name="EditSnippetBase">
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>0</height>
+   </size>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="snippetName">
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="KLineEdit" name="snippetNameEdit">
+     <property name="toolTip">
+      <string>&lt;p&gt;The name will also be used as the identifier during code completion.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; No spaces allowed.&lt;/p&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="snippetPrefixLabel">
+     <property name="text">
+      <string>Display Prefix:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="KLineEdit" name="snippetPrefixEdit">
+     <property name="toolTip">
+      <string>The display prefix will be shown during code completion.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="snippetArgumentsLabel">
+     <property name="text">
+      <string>Display Arguments:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="KLineEdit" name="snippetArgumentsEdit">
+     <property name="toolTip">
+      <string>The arguments will be shown during code completion.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="snippetPostfixLabel">
+     <property name="text">
+      <string>Display Postfix:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="KLineEdit" name="snippetPostfixEdit">
+     <property name="toolTip">
+      <string>The postfix will be shown during code completion.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="snippetContentsLabel">
+     <property name="text">
+      <string>Snippet:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="KTextEdit" name="snippetContentsEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>The actual snippet contents that will be inserted.</string>
+     </property>
+     <property name="acceptRichText">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>klineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>KTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>ktextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>snippetPrefixEdit</tabstop>
+  <tabstop>snippetArgumentsEdit</tabstop>
+  <tabstop>snippetPostfixEdit</tabstop>
+  <tabstop>snippetContentsEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

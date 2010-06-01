@@ -1,0 +1,55 @@
+[Desktop Entry]
+Icon=kdevelop
+Type=Service
+ServiceTypes=KCModule
+
+X-KDE-ModuleType=Library
+X-KDE-Library=kcm_kdev_projectsettings
+X-KDE-FactoryName=kcm_kdev_projectsettings
+X-KDE-ParentApp=kdevplatform
+X-KDE-ParentComponents=kdevplatform
+X-KDE-CfgDlgHierarchy=GENERAL
+
+Name=Projects
+Name[ca]=Projectes
+Name[ca@valencia]=Projectes
+Name[da]=Projekter
+Name[en_GB]=Projects
+Name[es]=Proyectos
+Name[et]=Projektid
+Name[fr]=Projets
+Name[it]=Progetti
+Name[nb]=Prosjekter
+Name[nds]=Projekten
+Name[nl]=Projecten
+Name[pl]=Projekty
+Name[pt]=Projectos
+Name[pt_BR]=Projetos
+Name[sl]=Projekti
+Name[sv]=Projekt
+Name[uk]=Проекти
+Name[x-test]=xxProjectsxx
+Name[zh_CN]=工程
+Name[zh_TW]=專案
+Comment=Configure Projects
+Comment[ca]=Configura els projectes
+Comment[ca@valencia]=Configura els projectes
+Comment[da]=Indstil projekter
+Comment[en_GB]=Configure Projects
+Comment[es]=Configurar proyectos
+Comment[et]=Projektide seadistamine
+Comment[fr]=Configurer les projets
+Comment[it]=Configura i progetti
+Comment[nb]=Sett opp prosjekter
+Comment[nds]=Projekten instellen
+Comment[nl]=Projecten instellen
+Comment[pl]=Konfiguruj projekty
+Comment[pt]=Configurar os Projectos
+Comment[pt_BR]=Configurar projetos
+Comment[sl]=Nastavite projekte
+Comment[sv]=Anpassa projekt
+Comment[uk]=Налаштування проектів
+Comment[x-test]=xxConfigure Projectsxx
+Comment[zh_CN]=配置工程
+Comment[zh_TW]=設定專案
+
