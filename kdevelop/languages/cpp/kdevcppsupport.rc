@@ -1,0 +1,16 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="KDevCppLanguageSupport" version="6">
+<MenuBar>
+  <Menu name="navigation">
+    <text context="@title:menu">Navigation</text>
+    <Action name="switch_definition_declaration" group="navigation_code"/>
+  </Menu>
+  <Menu name="code">
+    <text context="@title:menu">Code</text>
+    <Action name="code_new_class"/>
+    <Action name="code_rename_declaration"/>
+    <Action name="code_move_definition"/>
+    <Action name="code_private_implementation"/>
+  </Menu>
+</MenuBar>
+</kpartgui>
